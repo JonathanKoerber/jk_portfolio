@@ -1,8 +1,11 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import headshot from '../images/headshot.png'
-import SectionTitle from '../components/sectionTitle'
-import Paragraph from '../components/paragraph'
+import headshot from '../images/headshot.png';
+import SectionTitle from '../components/sectionTitle';
+import Paragraph from '../components/paragraph';
+import UnderLineSection from '../components/UnderLineSection'
+
+
 const Photo = styled.img`
     height: 300px;
     width: 300px;
@@ -15,8 +18,8 @@ const Title = styled.h1`
     align-self: left;
     font-size 1.5em;
     font-weight: bolder;
-    color: #111;
-    padding: 4%%;
+    color: #fff;
+    padding: 4%;
 @media only screen and (min-width: 992px){
     font-size: 3em;
     }
@@ -58,22 +61,22 @@ const Text = styled.p`
     "photo":"#" }
   ]
   const Hero = () =>(
-
+<UnderLineSection>
     <Row>
      { content.map((c, index)=>{
               return (
         <Column>
         <Title>{c.name}</Title>
-         <SectionTitle title={c.title}/>
-
+        <SectionTitle title={c.title}/>
         <Paragraph text={c.text}/>
-        </Column>
-        <Column>
-            <Photo src={headshot} />
         </Column>
       )
         })}
+        <Column>
+          <Photo src={headshot}/>
+          </Column>
     </Row>
+    </UnderLineSection>
 
   )
 export default Hero;

@@ -1,9 +1,16 @@
 import React, {Component, useEffect, useState} from 'react';
 import styled, {css} from 'styled-components';
 import Project from "../components/project";
-import Description from "../components/description"
-import {chainlink} from "../images/chainlink.webp"
+import Description from "../components/description";
+import {chainlink} from "../images/chainlink.webp";
+import UnderLineSection from "../components/UnderLineSection";
+import SectionTitle from "../components/sectionTitle"
 
+const Container = styled.div`
+  margin: 5%;
+  padding: 0;
+
+`;
 const Wrapper = styled.figure`
   padding: 0;
   margin: 0;
@@ -11,7 +18,10 @@ const Wrapper = styled.figure`
   flex-flow: row wrap;
 `;
 
-
+const PortfolioTitle = styled(SectionTitle)`
+  padding: 5%;
+  text-align: center;
+`;
 
 const projects = [
         {"title": "Celys Portfolio",
@@ -43,15 +53,18 @@ const projects = [
 ]
 
 const Gallery=()=>(
-        <div>
-              <Wrapper>
 
+          <Container>
+
+              <PortfolioTitle title="Portfolio"/>
+
+              <Wrapper>
                   {projects.map((p, index)=>{
                           return <Project project={p} />
                   })}
+                  </Wrapper>
+          </Container>
 
-              </Wrapper>
-              </div>
       );
 
 

@@ -12,7 +12,6 @@ export default function UsersList() {
   return (
     <div>
     <GlobalStyle/>
-
       <About />
 </div>
 

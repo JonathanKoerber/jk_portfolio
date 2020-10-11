@@ -6,7 +6,7 @@ import styled, {css} from 'styled-components'
 const Wrapper = styled.footer`
     height: auto;
     padding: 0 0% 0 10%;
-    margin-top: 5em;
+    margin: 5em;
     border-top-color: #111;
     border-top-width: 1px;
     border-top-style: solid;

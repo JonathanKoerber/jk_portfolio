@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styled, {css} from 'styled-components';
-import { Link } from "gatsby";
+
 import chainlink from '../images/chainlink.webp'
 import headshot from '../images/headshot.png'
 import SectionTitle from '../components/sectionTitle'
@@ -40,18 +40,25 @@ const Content = styled.div`
    bottom: 0;
    left: 100%;
    right: 0;
-   background-color: #008CBA;
+   background-color: #06292e;
    overflow: hidden;
    width: 0;
    height: 100%;
-   transition: .5s ease;
+   transition: .3s ease;
    ${Wrapper}:hover &{
      width: 100%;
      left: 0;
    }
 `;
+const FlexContainer=styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+
+`;
 const TextWrapper = styled.div`
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -60,10 +67,7 @@ const TextWrapper = styled.div`
   white-space: nowrap;
 
 `;
-const StyleLink = styled(Link)`
-      text-decoration: none;
-      color: white;
-`
+
 
 
 function Project(props) {
@@ -73,10 +77,10 @@ return(
     <Wrapper>
         <Image src={chainlink}/>
         <Content>
-        <TextWrapper>
-          <SectionTitle><StyleLink target="blank" to={project.href}>{project.title}</StyleLink></SectionTitle>
+        <FlexContainer>
+          <SectionTitle title={project.title} link={project.href}/>
           <Paragraph text={project.description}/>
-        </TextWrapper>
+        </FlexContainer>
         </Content>
     </Wrapper>
 )

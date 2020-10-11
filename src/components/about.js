@@ -4,6 +4,7 @@ import Header from '../components/header'
 import Hero from '../components/hero';
 import Gallery from "../components/gallery";
 import Footer from "../components/footer";
+import Info from "../components/info"
 
 
 import chainlink from "../images/chainlink.webp"
@@ -44,6 +45,7 @@ const About =() =>(
         <Container>
         <Header />
           <Hero/>
+          <Info/>
           <Gallery/>
           <Footer />
         </Container>
