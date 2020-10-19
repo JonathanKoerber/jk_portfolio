@@ -40,7 +40,8 @@ const Content = styled.div`
    bottom: 0;
    left: 100%;
    right: 0;
-   background-color: #06292e;
+   background-color: #f8f9fa;
+   opacity: .8;
    overflow: hidden;
    width: 0;
    height: 100%;
@@ -75,7 +76,7 @@ function Project(props) {
     const image = "https://react-flask-app.s3-us-west-2.amazonaws.com"+project.image;
 return(
     <Wrapper>
-        <Image src={chainlink}/>
+        <Image src={project.image}/>
         <Content>
         <FlexContainer>
           <SectionTitle title={project.title} link={project.href}/>

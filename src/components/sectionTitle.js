@@ -6,7 +6,7 @@ const Title = styled.h3`
 text-align: left;
 fort-family: Times New Roman, serif;
 font-size: 30px;
-color: #000002;
+color: #fff;
 font-weight: lighter;
 margin: 0;
 `;
@@ -20,7 +20,7 @@ opacity: .5;
 `
 const StyleLink = styled(Link)`
       text-decoration: none;
-      color: white;
+      color: black;
 `
 
 const SectionTitle = (props) => (

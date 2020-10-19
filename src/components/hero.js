@@ -18,8 +18,7 @@ const Title = styled.h1`
     align-self: left;
     font-size 1.5em;
     font-weight: bolder;
-    color: #fff;
-    padding: 4%;
+    color: #000;
 @media only screen and (min-width: 992px){
     font-size: 3em;
     }

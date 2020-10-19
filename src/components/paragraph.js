@@ -4,7 +4,7 @@ import styled, {css} from 'styled-components';
 const Text = styled.p`
   font-family: Helvetica Nue, sans-serif;
   font-size: 1.1em;
-  color: #fff;
+  color: #000;
   text-align: left;
   padding: 1%;
 

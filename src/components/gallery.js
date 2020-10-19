@@ -25,7 +25,7 @@ const PortfolioTitle = styled(SectionTitle)`
 
 const projects = [
         {"title": "Celys Portfolio",
-          "image": "chainlink",
+          "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot+from+2020-10-06+07-43-02.png",
           "href": "http://ec2-34-210-61-167.us-west-2.compute.amazonaws.com/",
           "description":"2019 was the 2nd year Amazon celebrated Prime membership with an"+
           "exclusive Prime Day Concert. Featuring live performances by headliner, Taylor Swift, "+
@@ -34,8 +34,8 @@ const projects = [
           "The venue itself allowed entrance to Prime members by invitation only at absolutely no cost with"}
     ,
         {"title": "WGU Capstone",
-         "image": "headshot",
-         "href": "#",
+         "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot+from+2020-10-06+07-43-02.png",
+         "href": "http://ec2-34-211-147-138.us-west-2.compute.amazonaws.com/",
          "description":"2019 was the 2nd year Amazon celebrated Prime membership with an"+
          "exclusive Prime Day Concert. Featuring live performances by headliner, Taylor Swift, "+
          "Dua Lipa, Sza, Becky G, and hosted by Jane Lynch. With a large budget and multiple stakeholders "+
@@ -43,7 +43,7 @@ const projects = [
          "The venue itself allowed entrance to Prime members by invitation only at absolutely no cost with"}
          ,
         {"title": "ADA Bundler",
-         "image": "chainlink",
+         "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot+from+2020-10-06+07-40-52.png",
          "href": "#",
          "description":"2019 was the 2nd year Amazon celebrated Prime membership with an"+
          "exclusive Prime Day Concert. Featuring live performances by headliner, Taylor Swift, "+
