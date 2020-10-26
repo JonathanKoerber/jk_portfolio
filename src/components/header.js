@@ -1,17 +1,20 @@
 import React from 'react';
+import UnderLineSection from '../components/UnderLineSection';
 import styled, {css} from 'styled-components'
 import logo from '../images/wheel.gif';
 
 // style for heading component
 const Wrapper = styled.header`
-
     width: 100%;
+    padding: 1em;
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    border-bottom-color: #cbcbcb;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 `;
 
 const Logo = styled.img`
@@ -32,7 +35,7 @@ const Logo = styled.img`
 
 const Header = () =>(
     <Wrapper>
-    <Logo src={logo} />
+  <Logo src={logo} />
     </Wrapper>
 )
 

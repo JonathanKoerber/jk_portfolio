@@ -10,7 +10,7 @@ const Photo = styled.img`
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    padding:10% 20% 10% 30%;
+    padding:10%;
   `;
 
 const Title = styled.h1`
@@ -42,10 +42,7 @@ const Text = styled.p`
     `;
     const Column = styled.div`
         max-width: 340px;
-        width: 100%
-    @media only screen and (min-width: 575px){
-        max-width: 400px;
-    }
+        width: 100%;
     @media only screen and (min-width: 789px){
       width: 50%;
     }
@@ -56,8 +53,9 @@ const Text = styled.p`
   const content = [
     {"name": "Jonathan Koerber",
     "title":"Software Developer",
-    "text": "I am a full stack developer. Bellow is a sample of projects that I have recently compleeted.",
-    "photo":"#" }
+    "text": "I am a Software Developer based in the greater Seattle area. "+
+    "Most recently I have been building web apps using Python with the Flask framework and JavaScript using React. ",
+    "photo":"https://jk-portfolio.s3-us-west-2.amazonaws.com/20201025_121900.jpg" }
   ]
   const Hero = () =>(
 <UnderLineSection>
@@ -69,11 +67,18 @@ const Text = styled.p`
         <SectionTitle title={c.title}/>
         <Paragraph text={c.text}/>
         </Column>
+
       )
         })}
-        <Column>
-          <Photo src={headshot}/>
+        {content.map((c, index)=>{
+          return(
+          <Column>
+            <Photo src={c.photo}/>
           </Column>
+        )
+        })}
+
+
     </Row>
     </UnderLineSection>
 

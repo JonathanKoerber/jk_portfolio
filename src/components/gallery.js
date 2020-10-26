@@ -10,12 +10,16 @@ const Container = styled.div`
   margin: 5%;
   padding: 0;
 
+
 `;
 const Wrapper = styled.figure`
   padding: 0;
   margin: 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
+  @media only screen and (min-width: 789px){
+    flex-flow: row wrap;
+  }
 `;
 
 const PortfolioTitle = styled(SectionTitle)`
@@ -25,31 +29,29 @@ const PortfolioTitle = styled(SectionTitle)`
 
 const projects = [
         {"title": "Celys Portfolio",
-          "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot+from+2020-10-06+07-43-02.png",
+          "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot_2020-10-24 React App.jpg",
           "href": "http://ec2-34-210-61-167.us-west-2.compute.amazonaws.com/",
-          "description":"2019 was the 2nd year Amazon celebrated Prime membership with an"+
-          "exclusive Prime Day Concert. Featuring live performances by headliner, Taylor Swift, "+
-          "Dua Lipa, Sza, Becky G, and hosted by Jane Lynch. With a large budget and multiple stakeholders "+
-          "including Amazon Music and Amazon Video, this concert was to be broadcast live on Amazon Video. "+
-          "The venue itself allowed entrance to Prime members by invitation only at absolutely no cost with"}
+          "description":"This is a personal portfolio site displaying Cely Henriquez design work. The site was "+
+          "build off of her design and all copy and images were provided. The application uses a Flask api to "+
+          "serve JSON files to a REACT UI. Content for the application is stored in a S3 bucket."}
     ,
         {"title": "WGU Capstone",
-         "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot+from+2020-10-06+07-43-02.png",
+         "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot_2020-10-24+Home+Page(1).png",
          "href": "http://ec2-34-211-147-138.us-west-2.compute.amazonaws.com/",
-         "description":"2019 was the 2nd year Amazon celebrated Prime membership with an"+
-         "exclusive Prime Day Concert. Featuring live performances by headliner, Taylor Swift, "+
-         "Dua Lipa, Sza, Becky G, and hosted by Jane Lynch. With a large budget and multiple stakeholders "+
-         "including Amazon Music and Amazon Video, this concert was to be broadcast live on Amazon Video. "+
-         "The venue itself allowed entrance to Prime members by invitation only at absolutely no cost with"}
+         "description":"I built this application for my capstone project for WGU. "+
+         "This application is based on reddit and allow user some of the basic functionality. Users can register "+
+         "manage there account, create post comments and threads as well as manage there threads. It was written in "+
+         "python using the Flask frame work storage using SQLite database. Search is provided through connecting with "+
+         "a AWS EC2 instance running Elastic Search."}
          ,
         {"title": "ADA Bundler",
          "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot+from+2020-10-06+07-40-52.png",
          "href": "#",
-         "description":"2019 was the 2nd year Amazon celebrated Prime membership with an"+
-         "exclusive Prime Day Concert. Featuring live performances by headliner, Taylor Swift, "+
-         "Dua Lipa, Sza, Becky G, and hosted by Jane Lynch. With a large budget and multiple stakeholders "+
-         "including Amazon Music and Amazon Video, this concert was to be broadcast live on Amazon Video. "+
-         "The venue itself allowed entrance to Prime members by invitation only at absolutely no cost with"}
+         "description":"This is CLI, written using Node.js, converts a  directory exported from Adobe Animate"+
+         "with its image resource as well as the logic for the animation for separate files. This tool converts "+
+         "the images into base64 and combines them and the animation logic in one HTML file. The specific use case "+
+         "of this application is to prepare animation to run in an environment which prevents the animation from "+
+         "calling outside resources."}
 ]
 
 const Gallery=()=>(

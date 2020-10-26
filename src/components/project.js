@@ -9,8 +9,14 @@ import Paragraph from '../components/paragraph'
 
 const Wrapper = styled.section`
   position: relative;
-  width: 50%;
-  height: auto;
+  width: 100%;
+  height: inherit;
+  padding: .5em 0 .5em 0;
+  @media only screen and (min-width: 789px){
+    padding: 0;
+    width: 33.33%;
+    height: inherit;
+  }
 /* @media only screen and (min-width: 575.98px){
     margin-bottom: -.75%;
 }
@@ -26,7 +32,7 @@ const Wrapper = styled.section`
 
 const Image = styled.img`
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: #000000;
     margin: 0;
     padding: 0;
@@ -36,6 +42,8 @@ const Image = styled.img`
     `;
 
 const Content = styled.div`
+
+@media only screen and (min-width: 789px){
    position: absolute;
    bottom: 0;
    left: 100%;
@@ -46,27 +54,30 @@ const Content = styled.div`
    width: 0;
    height: 100%;
    transition: .3s ease;
-   ${Wrapper}:hover &{
-     width: 100%;
-     left: 0;
+     ${Wrapper}:hover &{
+       width: 100%;
+       left: 0;
+     }
    }
 `;
 const FlexContainer=styled.div`
+display: none;
+@media only screen and (min-width: 789px){
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2%;
-
+}
 `;
-const TextWrapper = styled.div`
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
 
+const TextContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: inherit;
+  padding: .5em 0 .5em 0;
+  @media only screen and (min-width: 789px){
+    display: none;
+  }
 `;
 
 
@@ -83,6 +94,10 @@ return(
           <Paragraph text={project.description}/>
         </FlexContainer>
         </Content>
+        <TextContainer>
+          <SectionTitle title={project.title} link={project.href}/>
+          <Paragraph text={project.description}/>
+        </TextContainer>
     </Wrapper>
 )
 }
