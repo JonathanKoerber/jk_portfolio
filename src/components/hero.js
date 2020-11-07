@@ -1,55 +1,35 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 import headshot from '../images/headshot.png';
+import Title from '../components/title';
 import SectionTitle from '../components/sectionTitle';
 import Paragraph from '../components/paragraph';
+import Row from '../components/row';
+import Column from '../components/column'
 import UnderLineSection from '../components/UnderLineSection'
+import Photo from '../components/photo'
 
 
-const Photo = styled.img`
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    padding:10%;
-  `;
 
-const Title = styled.h1`
+const T= styled.h1`
     font-family: "Times New Roman", serif;
     align-self: left;
-    font-size 1.5em;
+    font-size: 1.5em;
     font-weight: bolder;
     color: #000;
 @media only screen and (min-width: 992px){
     font-size: 3em;
     }
     `;
-const Text = styled.p`
-    font-family: "Helvetica Nue", sans-serif;
-    color: white;
-    font-size: .8em;
-@media only screen and (min-width: 992px){
-    font-size: 1em;
-    }
-    `;
-    const Row = styled.div`
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        @media only screen and (min-width: 789px){
-          flex-direction: row;
-        }
-    `;
-    const Column = styled.div`
-        max-width: 340px;
-        width: 100%;
-    @media only screen and (min-width: 789px){
-      width: 50%;
-    }
-    @media only screen and (min-width: 992px){
-        max-width: 550px;
-        }
-        `;
+
+  const VertLine = styled.div`
+    height: 7em;
+    width: 1px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+  `;
+
   const content = [
     {"name": "Jonathan Koerber",
     "title":"Software Developer",
@@ -58,29 +38,34 @@ const Text = styled.p`
     "photo":"https://jk-portfolio.s3-us-west-2.amazonaws.com/20201025_121900.jpg" }
   ]
   const Hero = () =>(
+    <div>
 <UnderLineSection>
     <Row>
+      {content.map((c, index)=>{
+        return(
+        <Column>
+          <Photo url={c.photo}/>
+        </Column>
+      )
+      })}
+  </Row>
+  <VertLine/>
+</UnderLineSection>
+<UnderLineSection>
+  <Row>
      { content.map((c, index)=>{
               return (
         <Column>
-        <Title>{c.name}</Title>
-        <SectionTitle title={c.title}/>
-        <Paragraph text={c.text}/>
+        <Title text={c.name}/>
         </Column>
 
       )
-        })}
-        {content.map((c, index)=>{
-          return(
-          <Column>
-            <Photo src={c.photo}/>
-          </Column>
-        )
-        })}
-
-
+      })}
     </Row>
-    </UnderLineSection>
+</UnderLineSection>
+<VertLine/>
+
+</div>
 
   )
 export default Hero;
