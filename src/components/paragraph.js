@@ -7,7 +7,6 @@ const Text = styled.p`
   color: #000;
   text-align: left;
   padding: 1%;
-
     `;
 
 const Paragraph = (props) => (

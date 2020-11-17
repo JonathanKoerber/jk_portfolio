@@ -5,36 +5,30 @@ import styled, {css} from 'styled-components'
 // style for heading component
 const Wrapper = styled.footer`
     height: auto;
-    padding: 0 0% 0 10%;
-    margin: 5em;
-    border-top-color: #111;
-    border-top-width: 1px;
-    border-top-style: solid;
-`;
-const Container = styled.div`
-  padding: .0 0 5em 0;
+    padding: 0;
+
 `;
 const Email = styled.h5`
     font-size: 2em;
     font-family: "Helvetica Nue", sans-serif;
     font-weight: bolder;
     font-size: 1em;
-    color: #000;
+    color: #5ba491;
 `;
 const Social = styled.h6`
     font-family: "Helvetica Nue", sans-serif;
     font-size: .8em;
     font-weight: lighter;
-    color: #000;
+    color: #457b6d;
 `;
 const Link = styled.a`
     text-decoration: none;
-    color: #000;
+    color: #457b6d;
 `;
 
 const Footer = () =>(
         <Wrapper>
-            <Container>
+
                 <Email >Say Hello</Email>
                 <Social>
                     <Link href="mailto:jonathankoerber@gmail.com"
@@ -46,7 +40,7 @@ const Footer = () =>(
                 </Social>
                 <Social ><Link href="https://www.linkedin.com/in/jonathan-koerber-864b36123/"
                                                     target="_blank">linkedin</Link></Social>
-            </Container>
+
         </Wrapper>
 )
 

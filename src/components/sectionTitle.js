@@ -4,10 +4,9 @@ import { Link } from "gatsby";
 
 const Title = styled.h3`
 text-align: left;
-fort-family: Times New Roman, serif;
-font-size: 30px;
-color: #fff;
-font-weight: lighter;
+font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,sans-serif;
+font-size: 2em;
+font-weight: bold;
 margin: 0;
 `;
 const UnderLine = styled.div`
@@ -17,11 +16,11 @@ background-color: #00002;
 margin: 0 auto;
 border-radius: 5px;
 opacity: .5;
-`
+`;
 const StyleLink = styled(Link)`
       text-decoration: none;
-      color: black;
-`
+      color: white;
+`;
 
 const SectionTitle = (props) => (
     <div>

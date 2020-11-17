@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styled, {css} from 'styled-components';
-
-import chainlink from '../images/chainlink.webp'
-import headshot from '../images/headshot.png'
+import Header from "../components/header"
 import SectionTitle from '../components/sectionTitle'
 import Paragraph from '../components/paragraph'
 
@@ -48,7 +46,7 @@ const Content = styled.div`
    bottom: 0;
    left: 100%;
    right: 0;
-   background-color: #f8f9fa;
+   background-color: #b1dec8;
    opacity: .8;
    overflow: hidden;
    width: 0;
