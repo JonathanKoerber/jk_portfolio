@@ -106,8 +106,8 @@ const Data = [
           },
           link: {
               url:
-                  '',
-              text: ''
+                  'https://github.com/JonathanKoerber/Portfolio',
+              text: 'repo here'
           }
       },
       {
