@@ -2,16 +2,19 @@ import React, {Component, useEffect, useState} from 'react';
 import styled, {css} from 'styled-components';
 import Project from "../components/project";
 import Description from "../components/description";
-import {chainlink} from "../images/chainlink.webp";
 import UnderLineSection from "../components/UnderLineSection";
-import SectionTitle from "../components/sectionTitle"
+import SectionTitle from "../components/sectionTitle";
+import Paragraph from "../components/paragraph";
+import Title from "../components/title";
+import Github from "../components/github";
+import Row from "../components/row";
+import Column from "../components/column";
 
 const Container = styled.div`
-  margin: 5%;
-  padding: 0;
-
-
+  margin: 0;
+  padding: 5% 0 5% 0;
 `;
+
 const Wrapper = styled.figure`
   padding: 0;
   margin: 0;
@@ -25,6 +28,11 @@ const Wrapper = styled.figure`
 const PortfolioTitle = styled(SectionTitle)`
   padding: 5%;
   text-align: center;
+`;
+const ParaRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 `;
 
 const projects = [
@@ -46,7 +54,7 @@ const projects = [
          ,
         {"title": "ADA Bundler",
          "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot+from+2020-10-06+07-40-52.png",
-         "href": "#",
+         "href": "https://github.com/JonathanKoerber/ADADirBundler",
          "description":"This is CLI, written using Node.js, converts a  directory exported from Adobe Animate"+
          "with its image resource as well as the logic for the animation for separate files. This tool converts "+
          "the images into base64 and combines them and the animation logic in one HTML file. The specific use case "+
@@ -57,9 +65,18 @@ const projects = [
 const Gallery=()=>(
 
           <Container>
-
-              <PortfolioTitle title="Portfolio"/>
-
+          <Row>
+            <Column>
+              <SectionTitle title="portfolio"/>
+            </Column>
+            <Column>
+              <Paragraph text="Here are a few of my projects."/>
+              <ParaRow>
+              <Paragraph text="There's more here."/>
+              <Github />
+              </ParaRow>
+            </Column>
+          </Row>
               <Wrapper>
                   {projects.map((p, index)=>{
                           return <Project project={p} />

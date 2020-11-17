@@ -19,9 +19,17 @@ const Wrapper = styled.nav`
   margin-left: auto;
 
 `;
-
+const VertLine = styled.div`
+  height: 7em;
+  width: 1px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+`;
 
 const Nav = (props) => (
+  <div>
+  <VertLine/>
 <Wrapper>
 <Row>
 {props.buttons.map((c, index)=>{
@@ -31,6 +39,7 @@ const Nav = (props) => (
 })}
 </Row>
 </Wrapper>
+</div>
 )
 
 export default Nav;

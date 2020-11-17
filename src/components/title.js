@@ -8,7 +8,6 @@ font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
 font-weight: bold;
 font-size: 3em;
 color: #fff;
-font-weight: lighter;
 padding: 10% 0 10% 0;
 margin: 0;
 `;

@@ -12,7 +12,7 @@ const Text = styled.h1`
 font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,sans-serif;
 font-weight: bold;
 font-size: 1em;
-color: #000;
+color: black;
 font-weight: lighter;
 padding: 10% 0 10% 0;
 margin-left: auto;
@@ -23,11 +23,10 @@ margin-bottom: auto;
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    color: #5ba491;
+    color: black;
     @media only screen and (min-width: 789px){
     ${Wrapper}:hover &{
-      color: #371470;
-
+      color: #5ba491;
     }
     }
 

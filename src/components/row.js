@@ -7,10 +7,13 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+
     @media only screen and (min-width: 789px){
       flex-direction: row;
     }
 `;
+
 
 
 const Row = (props) => (

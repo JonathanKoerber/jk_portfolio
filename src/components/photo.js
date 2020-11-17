@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
+import node_hero from '../images/node_hero.jpeg'
 
 
 const Image = styled.img`
@@ -9,12 +10,13 @@ const Image = styled.img`
     display: block;
     margin-right: auto;
     margin-left: auto;
-    border-color: fff;
+    border-color: #fff;
     border-width: 1px;
   `;
+
 const ImageWrapper = styled.div`
-  width: min-content;
-  hight: inherit;
+  height: 10em;
+  width: 10em;
   border-color: #fff;
   border-width: 1px;
   border-style: solid;
@@ -22,6 +24,8 @@ const ImageWrapper = styled.div`
   opacity: 7;
   margin-right: auto;
   margin-left: auto;
+
+
 `;
 const ImageOuterWrapper = styled.div`
   width: min-content;
