@@ -1,5 +1,4 @@
 import React from "react"
-import styled, {css} from "styled-components";
 import {GlobalStyle} from "../components/theme/globalStyle";
 import Header from "../components/header";
 import Hero from "../components/hero";

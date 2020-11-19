@@ -5,11 +5,8 @@ import Header from "../components/header";
 import Hero from "../components/hero";
 import Main from "../components/main";
 import Intro from "../components/intro";
-import Title from "../components/title";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import {Link} from "gatsby";
-
 
 
 const buttons =[

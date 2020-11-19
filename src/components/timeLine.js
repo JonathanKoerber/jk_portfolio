@@ -1,6 +1,5 @@
-import React, {Component, useEffect, useState} from 'react';
+import React from 'react';
 import styled, {css} from 'styled-components';
-
 import Item from '../components/timeLineItem'
 
 const Wrapper = styled.div`
@@ -159,7 +158,7 @@ const Data = [
           category: {
               tag: 'github',
               color: '#018f69',
-              align: 'center'
+              align: 'end'
           },
           link: {
               url:

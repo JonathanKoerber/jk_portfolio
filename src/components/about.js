@@ -7,7 +7,6 @@ import Footer from "../components/footer";
 import Info from "../components/info"
 
 
-import chainlink from "../images/chainlink.webp"
 const Wrapper = styled.section`
   width: 100%;
   height:100%;

@@ -65,23 +65,23 @@ const Logo = styled.img`
 function GetLogo(tag){
   if(tag == 'wgu'){
     return <Logo src={wgu} />
-  }else if(tag == 'github'){
+  }else if(tag === 'github'){
     return <Logo src={github}/>
-  }else if(tag == 'farestart'){
+  }else if(tag === 'farestart'){
     return <Logo src={farestart}/>
-  }else if(tag == 'omega'){
+  }else if(tag === 'omega'){
     return <Logo src={omega}/>
   }
 }
 function GetBackground(tag){
-  if(tag == 'wgu'){
-    return '#59bdf9'
-  }else if(tag == 'github'){
-    return '#d8d8d8'
-  }else if(tag == 'farestart'){
-    return '#edad82'
-  }else if(tag == 'omega'){
-    return '#a49cb9'
+  if(tag === 'wgu'){
+    return '#8aa0ff'
+  }else if(tag === 'github'){
+    return '#f3f3f3'
+  }else if(tag === 'farestart'){
+    return '#fee5cf'
+  }else if(tag === 'omega'){
+    return '#e8fbff'
   }
 }
 

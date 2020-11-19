@@ -39,7 +39,7 @@ const blurb = [
     ]
 const content = [
   {"title":"Education",
-  "text":"Western Govenors Univerity: BA Software"},
+  "text":"Western Govenors Univerity: BA Software Development"},
   {"title":"Certifications",
   "text":  "• CompTIA A+\n"+
   " • CompTIA Project+\n"+
