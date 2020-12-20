@@ -33,7 +33,7 @@ const T= styled.h1`
     {"name": "Jonathan Koerber",
     "title":"Software Developer",
     "text": "I am a Software Developer based in the greater Seattle area. "+
-    "Most recently I have been building web apps using Python with the Flask framework and JavaScript using React. ",
+    "I am a Software Developer based in the greater Seattle area. I graduated from West Governors University with a Bachelors in Software Development in the Summer of 2020. I have recently been building web apps using Python with the Flask framework and JavaScript using React. ",
     "photo":"https://jk-portfolio.s3-us-west-2.amazonaws.com/2020-11-14-095538_2.jpg" }
   ]
   const Hero = () =>(
