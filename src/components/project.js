@@ -3,6 +3,7 @@ import styled, {css} from 'styled-components';
 import Header from "../components/header"
 import SectionTitle from '../components/sectionTitle'
 import Paragraph from '../components/paragraph'
+import Column from '../components/column'
 
 
 const Wrapper = styled.section`
@@ -12,7 +13,7 @@ const Wrapper = styled.section`
   padding: .5em 0 .5em 0;
   @media only screen and (min-width: 789px){
     padding: 0;
-    width: 33.33%;
+    width: 100%;
     height: inherit;
   }
 /* @media only screen and (min-width: 575.98px){
@@ -93,8 +94,10 @@ return(
         </FlexContainer>
         </Content>
         <TextContainer>
+        <Column>
           <SectionTitle title={project.title} link={project.href}/>
           <Paragraph text={project.description}/>
+          </Column>
         </TextContainer>
     </Wrapper>
 )

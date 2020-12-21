@@ -14,9 +14,10 @@ const WideColumn = styled(Column)`
 const blurb = [
       {"name": "Jonathan Koerber",
       "title":"Software Developer:",
-      "text": "I am a Software Developer based in the greater Seattle area. I graduated "+
-      "from West Governors University with a Bachelors in Software Development in the Summer of 2020. "+
-      "Most recently I have been building web apps using Python with the Flask framework and JavaScript using React.  ",
+      "text": "I am a Software Developer based in the greater Seattle area. "+
+      "I graduated from West Governors University with a Bachelors in Software Development "+
+      "in the Summer of 2020. I have recently been building web apps using Python with the Flask "+
+      "framework and JavaScript using React.",
       "photo":"https://jk-portfolio.s3-us-west-2.amazonaws.com/20201025_121900.jpg" }
     ]
 
