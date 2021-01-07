@@ -5,9 +5,11 @@ import farestart from '../images/farestart.jpg';
 import wgu from '../images/wgu_icon.jpg';
 import omega from '../images/omega.png';
 import github from '../images/GitHub-Mark-64px.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
-
+AOS.init();
 
 const Container = styled.article`
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -63,7 +65,7 @@ const Logo = styled.img`
   border-radius: 50%;
 `;
 function GetLogo(tag){
-  if(tag == 'wgu'){
+  if(tag === 'wgu'){
     return <Logo src={wgu} />
   }else if(tag === 'github'){
     return <Logo src={github}/>
@@ -84,10 +86,21 @@ function GetBackground(tag){
     return '#e8fbff'
   }
 }
+function GetFade(tag){
+  if(tag === 'wgu'){
+    return 'fade-up'
+  }else if(tag === 'github'){
+    return 'fade-up-left'
+  }else if(tag === 'farestart'){
+    return 'fade-up-right'
+  }else if(tag === 'omega'){
+    return 'fade-up-right'
+  }
+}
 
 const Item = ({data}) => (
 
-      <Container style={{ alignSelf: data.category.align, backgroundColor:GetBackground(data.category.tag)}} >
+      <Container data-aos={GetFade(data.category.tag)} style={{ alignSelf: data.category.align, backgroundColor:GetBackground(data.category.tag)}} >
         <Row>
         <Text>{data.date}</Text>
             <Tag >

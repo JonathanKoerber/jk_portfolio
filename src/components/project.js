@@ -51,10 +51,11 @@ const Content = styled.div`
    opacity: .8;
    overflow: hidden;
    width: 0;
-   height: 100%;
-   transition: .3s ease;
+   height: 0;
+   transition: .2s ease;
      ${Wrapper}:hover &{
        width: 100%;
+       height: 100%;
        left: 0;
      }
    }

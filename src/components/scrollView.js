@@ -1,42 +1,19 @@
 import React, {Component, useEffect, useState} from 'react';
 import styled, {css} from 'styled-components';
-import Project from "../components/project";
-import Description from "../components/description";
-import UnderLineSection from "../components/UnderLineSection";
-import SectionTitle from "../components/sectionTitle";
-import Paragraph from "../components/paragraph";
-import Title from "../components/title";
-import Github from "../components/github";
-import Row from "../components/row";
-import Column from "../components/column";
-import ScrollView from "../components/scrollView"
-
-const Container = styled.div`
-  margin: 0;
-  padding: 5% 0 5% 0;
-  width: 100%;
-`;
-
-const Wrapper = styled.figure`
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  @media only screen and (min-width: 789px){
-    flex-flow: row wrap;
-  }
-`;
-
-const PortfolioTitle = styled(SectionTitle)`
-  padding: 5%;
-  text-align: center;
-`;
-const ParaRow = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-`;
-
+//   const [scrollPosition, setScrollPosition] = useState(0);
+//
+//
+//   const handleScroll= () =>{
+//     const position = window.pageYOffset;
+//     setScrollPosition(position);
+//   }
+// useEffect(()=>{
+//   window.addEventListener('scroll', handleScroll, {passive: true});
+//   return () => {
+//     window.removeEventListener('scroll', handleScroll);
+//
+//   };
+// }, [])
 const projects = [
         {"title": "Celys Portfolio",
           "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot_2020-10-24 React App.jpg",
@@ -60,31 +37,38 @@ const projects = [
          "of this application is to prepare an animation to run in an environment which prevents the file from "+
          "calling outside resources."}
 ]
-
-const Gallery=()=>(
-
-          <Container>
-          <Row>
-            <Column>
-              <SectionTitle title="portfolio"/>
-            </Column>
-            <Column>
-              <Paragraph text="Here are a few of my projects."/>
-              <ParaRow>
-              <Paragraph text="There's more here."/>
-              <Github />
-              </ParaRow>
-            </Column>
-          </Row>
-              <Wrapper>
-                  {projects.map((p, index)=>{
-                          return <Project project={p} />
-                  })}
-                  </Wrapper>
-          </Container>
-
-      );
+let background = projects[0].image;
+const Container = styled.div`
+background-image: url(background);
+  padding: 0;
+`;
+const List = styled.ul`
+list-style-type: none;
+padding: 0;
+`;
+const Item = styled.li`
+padding: 0;;
+`;
 
 
+//chancge container backgound
+function changeBackground(image){
+  background = image ;
+}
+const list = projects.map((project, index) =>
+    <Item key={index}
+    onMouseOver={changeBackground(project.image)}>
+    {project.title}
+  </Item>
+);
+const ScrollView=()=>(
 
-export default Gallery;
+
+  <Container>
+    <List>
+    {list}
+    </List>
+  </Container>
+
+)
+export default ScrollView;
