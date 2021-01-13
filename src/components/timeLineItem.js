@@ -5,11 +5,7 @@ import farestart from '../images/farestart.jpg';
 import wgu from '../images/wgu_icon.jpg';
 import omega from '../images/omega.png';
 import github from '../images/GitHub-Mark-64px.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
-
-AOS.init();
 
 const Container = styled.article`
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -100,7 +96,7 @@ function GetFade(tag){
 
 const Item = ({data}) => (
 
-      <Container data-aos={GetFade(data.category.tag)} style={{ alignSelf: data.category.align, backgroundColor:GetBackground(data.category.tag)}} >
+      <Container >
         <Row>
         <Text>{data.date}</Text>
             <Tag >
