@@ -20,7 +20,7 @@ const Wrapper = styled.nav`
 
 `;
 const VertLine = styled.div`
-  height: 7em;
+  height: 4em;
   width: 1px;
   background-color: #fff;
   margin-left: auto;

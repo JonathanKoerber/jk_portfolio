@@ -2,7 +2,7 @@ import React from "react"
 import styled, {css} from "styled-components";
 import {GlobalStyle} from "../components/theme/globalStyle";
 import Header from "../components/header"
-import Hero from "../components/hero";
+import Logo from "../components/logo";
 import Nav from "../components/nav";
 import Main from "../components/main";
 import Timeline from "../components/timeLine";
@@ -19,7 +19,7 @@ export default function Milestones() {
     <div>
     <GlobalStyle/>
     <Header/>
-      <Hero />
+    <Logo/>
       <Main>
       <Timeline/>
       </Main>

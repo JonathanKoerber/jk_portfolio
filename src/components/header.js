@@ -8,10 +8,17 @@ import Dropdown from "../components/dropdown"
 const Wrapper = styled.header`
     width: 100%;
     padding: 1em;
-    height: auto;
+    height: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: right;
+    position: fixed;
+    background-image: linear-gradient(180deg, rgba(144,176,148,1), rgba(0,0,0,0));
+}
+    z-index: 10;
+    top: 0;
+    left: 0;
+
 `;
 
 

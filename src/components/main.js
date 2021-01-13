@@ -17,11 +17,17 @@ import Photo from '../components/photo'
     margin-left: auto;
     margin-right: auto;
   `;
+  const Wrapper = styled.article`
+    height: 50%;
+    width: 100%;
+  `;
   const Main = (props) => (
+    <Wrapper>
   <UnderLineSection>
     <Row>
       {props.children}
-      </Row>
+    </Row>
   </UnderLineSection>
+  </Wrapper>
 )
 export default Main;

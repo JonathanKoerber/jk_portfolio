@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import menuImage from "../images/menu(1).png"
 
 const Wrapper = styled.div`
+margin-right: 2em;
 @media only screen and (max-width: 789px){
   display: none;
 }
@@ -11,6 +12,7 @@ const Wrapper = styled.div`
 
 const Menu = styled.div`
   padding: 1em;
+  margin: 1em;
   position: absolute;
   right: 30px;
   border-color: #fff;
