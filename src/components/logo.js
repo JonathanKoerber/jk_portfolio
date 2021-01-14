@@ -55,13 +55,16 @@ const Wrapper = styled.article`
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
-
   `;
 
-
+  const HorzLine = styled.div`
+      border-color: white;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      margin: 0 15% 0 15%;
+  `;
 const Hero = () =>(
   <Wrapper>
-<UnderLineSection>
   <Row>
       <Column>
       <ImageOuterWrapper>
@@ -75,7 +78,7 @@ const Hero = () =>(
 
 </Row>
 <VertLine/>
-</UnderLineSection>
+<HorzLine/>
 </Wrapper>
 )
 export default Hero;
