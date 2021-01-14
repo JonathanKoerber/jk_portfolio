@@ -96,7 +96,10 @@ function GetFade(tag){
 
 const Item = ({data}) => (
 
-      <Container >
+      <Container  data-sal="fade"
+  data-sal-delay="300"
+  data-sal-easing="ease"
+  style={{ alignSelf: data.category.align, backgroundColor:GetBackground(data.category.tag)}} >
         <Row>
         <Text>{data.date}</Text>
             <Tag >

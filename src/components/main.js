@@ -16,18 +16,25 @@ import Photo from '../components/photo'
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
   `;
-  const Wrapper = styled.article`
-    height: 50%;
-    width: 100%;
+
+  const Wrapper = styled.section`
+      align-item: start;
+      padding: 0;
+
+      margin: 35% 2% 35% 2%;
+      @media only screen and (min-width: 789px){
+      margin: 10% 15% 10% 15%;
+    }
   `;
   const Main = (props) => (
     <Wrapper>
-  <UnderLineSection>
+
     <Row>
       {props.children}
     </Row>
-  </UnderLineSection>
+
   </Wrapper>
 )
 export default Main;

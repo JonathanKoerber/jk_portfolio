@@ -5,7 +5,10 @@ import { Link } from "gatsby";
 const Wrapper = styled.div`
     width: max-content;
   padding: 1em;
+  @media only screen and (max-width: 789px){
+      padding: .8em;
 
+  }
 
 `;
 const Text = styled.h1`
@@ -18,6 +21,10 @@ padding: 10% 0 10% 0;
 margin-left: auto;
 margin-top: auto;
 margin-bottom: auto;
+  @media only screen and (max-width: 789px){
+      padding: 7% 0 7% 0;
+      font-size: .9em;
+  }
 
 `;
 

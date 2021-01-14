@@ -16,6 +16,8 @@ const Wrapper = styled.div`
    width: 4px;
    height: 100%;
   }
+  overflow: hidden;
+
 `;
 
 const Data = [

@@ -4,10 +4,11 @@ import { Link } from "gatsby";
 
 const Wrapper = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     
+
     @media only screen and (min-width: 789px){
       flex-direction: row;
     }

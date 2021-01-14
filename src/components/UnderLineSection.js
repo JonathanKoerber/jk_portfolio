@@ -3,9 +3,10 @@ import styled, {css} from 'styled-components';
 
 const Wrapper = styled.section`
     align-item: start;
-    margin: 0 15% 0 15%;
     padding: 0;
-
+    @media only screen and (min-width: 789px){
+    margin: 0 15% 0 15%;
+  }
 `;
 
 const Underline = styled.section`

@@ -22,11 +22,12 @@ const T= styled.h1`
     `;
 
   const VertLine = styled.div`
-    height: 7em;
+    height: 4em;
     width: 1px;
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
+
   `;
 
   const content = [

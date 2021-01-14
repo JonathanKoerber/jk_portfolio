@@ -9,26 +9,26 @@ import UnderLineSection from '../components/UnderLineSection'
 import Photo from '../components/photo'
 
 
+const Wrapper = styled.article`
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 1em;
+  position: fixed;
+  z-index: 1;
+  background-image: linear-gradient(180deg, rgba(144,176,148,1), rgba(0,0,0,0));
 
-const T= styled.h1`
-    font-family: "Times New Roman", serif;
-    align-self: left;
-    font-size: 1.5em;
-    font-weight: bolder;
-    color: #000;
-@media only screen and (min-width: 992px){
-    font-size: 3em;
-    }
     `;
     const ImageWrapper = styled.div`
-      height: 3em;
-      width: 3em;
+      height: .5em;
+      width: .5em;
       border-color: #fff;
       border-width: 1px;
       border-style: solid;
       border-radius: 50%;
       opacity: 7;
-      padding: .5em;
+      padding: .2em;
       margin-right: auto;
       margin-left: auto;
     `;
@@ -42,7 +42,7 @@ const T= styled.h1`
       opacity: 7;
       margin-right: auto;
       margin-left: auto;
-      padding: 1em;
+      padding: .7em;
     `;
     const Line = styled.div`
       with:.4em;
@@ -50,15 +50,17 @@ const T= styled.h1`
       color: #fff;
     `;
   const VertLine = styled.div`
-    height: 3em;
+    height: 2em;
     width: 1px;
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
+
   `;
 
 
 const Hero = () =>(
+  <Wrapper>
 <UnderLineSection>
   <Row>
       <Column>
@@ -74,5 +76,6 @@ const Hero = () =>(
 </Row>
 <VertLine/>
 </UnderLineSection>
+</Wrapper>
 )
 export default Hero;
