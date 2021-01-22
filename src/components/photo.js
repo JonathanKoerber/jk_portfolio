@@ -2,7 +2,9 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import node_hero from '../images/node_hero.jpeg'
 
-
+const Wrapper = styled.div`
+      margin-top: 3.5em;
+`;
 const Image = styled.img`
     height: 10em;
     width: 10em;
@@ -10,6 +12,7 @@ const Image = styled.img`
     display: block;
     margin-right: auto;
     margin-left: auto;
+
     border-color: #fff;
     border-width: 1px;
   `;
@@ -46,6 +49,7 @@ const Line = styled.div`
 `;
 
 const Photo = (props) =>(
+  <Wrapper>
   <ImageOuterWrapper>
   <ImageOuterWrapper>
   <ImageWrapper>
@@ -53,6 +57,7 @@ const Photo = (props) =>(
   </ImageWrapper>
   </ImageOuterWrapper>
     </ImageOuterWrapper>
+    </Wrapper>
 )
 
 

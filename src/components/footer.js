@@ -6,6 +6,7 @@ import styled, {css} from 'styled-components'
 const Wrapper = styled.footer`
     height: auto;
     padding: 0;
+    margin: 1em;
 
 `;
 const Email = styled.h5`

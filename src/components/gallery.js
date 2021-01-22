@@ -46,7 +46,7 @@ const projects = [
     ,
         {"title": "WGU Capstone",
          "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot_2020-10-24+Home+Page(1).png",
-         "href": "http://ec2-34-211-147-138.us-west-2.compute.amazonaws.com/",
+         "href": "http://192.81.133.218/",
          "description":"I built this application for my capstone project for WGU. It is modeled after Reddit and provides some of the basic functionality. "+
          "Users can register, manage their accounts, create post and comments and threads. It uses the Flask framework with Handlebars to "+
          "build UI templates with an SQLite database."}

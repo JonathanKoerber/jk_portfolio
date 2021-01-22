@@ -44,7 +44,7 @@ const Content = styled.div`
 
 @media only screen and (min-width: 789px){
    position: absolute;
-   bottom: 0;
+   bottom: 0;     
    left: 100%;
    right: 0;
    background-color: #b1dec8;
