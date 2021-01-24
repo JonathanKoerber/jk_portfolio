@@ -13,8 +13,8 @@ import ScrollView from "../components/scrollView"
 
 const Container = styled.div`
   margin: 0;
-  padding: 5% 0 5% 0;
-  width: 100%;
+  padding:0;
+
 `;
 
 const Wrapper = styled.figure`
@@ -29,8 +29,17 @@ const Wrapper = styled.figure`
 
 const PortfolioTitle = styled(SectionTitle)`
   padding: 5%;
-  text-align: center;
+  text-align: left;
 `;
+
+const Text = styled.p`
+  font-family: Helvetica Nue, sans-serif;
+  font-size: 1.1em;
+  color: #000;
+  text-align: left;
+
+    `;
+
 const ParaRow = styled.div`
     display: flex;
     flex-direction: row;
@@ -64,18 +73,12 @@ const projects = [
 const Gallery=()=>(
 
           <Container>
-          <Row>
             <Column>
-              <SectionTitle title="portfolio"/>
-            </Column>
-            <Column>
-              <Paragraph text="Here are a few of my projects."/>
-              <ParaRow>
-              <Paragraph text="There's more here."/>
+              <SectionTitle title="Portfolio"/>
+              <Text>Here are a few of my projects.</Text>
+              <Text>There's more here.</Text>
               <Github />
-              </ParaRow>
             </Column>
-          </Row>
               <Wrapper>
                   {projects.map((p, index)=>{
                           return <Project project={p} />

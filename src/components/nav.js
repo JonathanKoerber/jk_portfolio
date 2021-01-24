@@ -21,10 +21,13 @@ const Wrapper = styled.nav`
 
 const Underline = styled.div`
   width: 100%;
-  margin:0 15% 0 15%;
+  margin:0;
   border-color: white;
   border-top-width: 1px;
   border-top-style: solid;
+@media only screen and (min-width: 789px){
+  margin:0 15% 0 15%;
+}
 `;
 
 const VertLine = styled.div`

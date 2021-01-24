@@ -6,11 +6,17 @@ import Paragraph from '../components/paragraph'
 import Column from '../components/column'
 
 
+
 const Wrapper = styled.section`
   position: relative;
-  width: 100%;
+
   height: inherit;
-  padding: .5em 0 .5em 0;
+  padding: 1em;
+  margin: 2em;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1em;
   @media only screen and (min-width: 789px){
     padding: 0;
     width: 100%;
@@ -31,44 +37,15 @@ const Wrapper = styled.section`
 
 const Image = styled.img`
     width: 100%;
-    height: 100%;
-    background-color: #000000;
+    height: auto;
     margin: 0;
-    padding: 0;
+    padding: 1em;
     display: block;
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 789px){
+  width: 50%;
+  
 }
     `;
-
-const Content = styled.div`
-
-@media only screen and (min-width: 789px){
-   position: absolute;
-   bottom: 0;     
-   left: 100%;
-   right: 0;
-   background-color: #b1dec8;
-   opacity: .8;
-   overflow: hidden;
-   width: 0;
-   height: 0;
-   transition: .2s ease;
-     ${Wrapper}:hover &{
-       width: 100%;
-       height: 100%;
-       left: 0;
-     }
-   }
-`;
-const FlexContainer=styled.div`
-display: none;
-@media only screen and (min-width: 789px){
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2%;
-}
-`;
 
 const TextContainer = styled.div`
   position: relative;
@@ -76,30 +53,36 @@ const TextContainer = styled.div`
   height: inherit;
   padding: .5em 0 .5em 0;
   @media only screen and (min-width: 789px){
-    display: none;
+
   }
 `;
 
+const Row = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+
+    @media only screen and (min-width: 789px){
+      flex-direction: row;
+    }
+`;
 
 function Project(props) {
     const project = props.project;
     const image = "https://react-flask-app.s3-us-west-2.amazonaws.com"+project.image;
 return(
     <Wrapper>
+    <Row>
         <Image src={project.image}/>
-        <Content>
-        <FlexContainer>
-          <SectionTitle title={project.title} link={project.href}/>
-          <Paragraph text={project.description}/>
-        </FlexContainer>
-        </Content>
         <TextContainer>
         <Column>
           <SectionTitle title={project.title} link={project.href}/>
           <Paragraph text={project.description}/>
           </Column>
         </TextContainer>
+        </Row>
     </Wrapper>
 )
 }

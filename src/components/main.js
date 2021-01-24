@@ -22,10 +22,9 @@ import Photo from '../components/photo'
   const Wrapper = styled.section`
       align-item: start;
       padding: 0;
-
       margin: 35% 2% 35% 2%;
       @media only screen and (min-width: 789px){
-      margin: 10% 15% 10% 15%;
+      margin: 5% 15% 10% 5%;
     }
   `;
   const Main = (props) => (
