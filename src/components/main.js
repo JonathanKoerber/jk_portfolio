@@ -24,7 +24,7 @@ import Photo from '../components/photo'
       padding: 0;
       margin: 35% 2% 35% 2%;
       @media only screen and (min-width: 789px){
-      margin: 5% 15% 10% 5%;
+      margin: 5% 15% 10% 15%;
     }
   `;
   const Main = (props) => (

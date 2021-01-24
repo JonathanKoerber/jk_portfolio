@@ -20,7 +20,6 @@ const Wrapper = styled.nav`
 `;
 
 const Underline = styled.div`
-  width: 100%;
   margin:0;
   border-color: white;
   border-top-width: 1px;
