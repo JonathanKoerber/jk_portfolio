@@ -9,8 +9,7 @@ import Timeline from "../components/timeLine";
 import Footer from "../components/footer";
 
 const buttons =[
-  {'text': "Home", 'link':'/'},
-  {'text':'About', 'link':'/about'},
+  {'text':'Home', 'link':'/'},
   {'text':'Projects', 'link':'/portfolio'}
 ]
 

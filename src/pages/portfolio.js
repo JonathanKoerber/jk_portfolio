@@ -10,7 +10,6 @@ import Footer from "../components/footer"
 
 const buttons =[
   {'text':'Home', 'link':'/'},
-  {'text':'About', 'link':'/about'},
   {'text':'What I\'ve Been Up To', 'link':'/milestones'}
 
 ]

@@ -89,35 +89,31 @@ class Dropdown extends React.Component {
   render() {
     return ( <
       Wrapper >
-      <
-      Icon src = {
-        menuImage
-      }
-      onClick = {
-        this.showDropdownMenu
-      }
+      <Icon src = {menuImage} onClick = {this.showDropdownMenu}
       />
-
       {
-        this.state.displayMenu ? ( <
-            Menu >
-            <
-            List >
-            <
-            li > < Text > < StyledLink target = "blank"
-            to = '/' > Home < /StyledLink></Text > < /li> <
-            li > < Text > < StyledLink target = "blank"
-            to = '/about' > About < /StyledLink></Text > < /li> <
-            li > < Text > < StyledLink target = "blank"
-            to = '/milestones' > What I 've Been Up To</StyledLink></Text></li> <
-            li > < Text > < StyledLink target = "blank"
-            to = '/portfolio' > Projects < /StyledLink></Text > < /li> <
-            /List> <
-            /Menu>
+        this.state.displayMenu ? (
+          <Menu>
+            <List>
+              <li>
+                <Text >
+                  < StyledLink target = "blank" to = '/' > Home < /StyledLink>
+                 </Text >
+              </li>
+                <li>
+                  <Text>
+                    <StyledLink target = "blank" to = '/milestones' > What I 've Been Up To</StyledLink>
+                  </Text >
+                 </li>
+                <li>
+                  <Text>
+                      <StyledLink target = "blank" to = '/portfolio' > Projects </StyledLink>
+                  </Text>
+                </li>
+              </List>
+            </Menu>
           ) :
-          (
-            null
-          )
+          (null)
       }
 
       <

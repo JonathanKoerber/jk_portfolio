@@ -47,6 +47,12 @@ const ParaRow = styled.div`
 `;
 
 const projects = [
+        {"title": "TreeMama/iSea Tree-React-Prototype",
+          "image": "https://avatars.githubusercontent.com/u/62637055?s=460&u=b364b454161f9ee86e0be099ce1ff4ce6f80b4ba&v=4",
+          "href": "https://github.com/TreeMama/iSeaTree-React-Prototype",
+          "description":"Here is an open-source project using React Native with TypeScript and Expo that I contribute. "+
+          "The app is designed for educational use for middle and high school students. Users can identify trees and gathers "+
+          "environmental data about the trees that they find. "},
         {"title": "Celys Portfolio",
           "image": "https://jk-portfolio.s3-us-west-2.amazonaws.com/Screenshot_2020-10-24 React App.jpg",
           "href": "http://ec2-34-210-61-167.us-west-2.compute.amazonaws.com/",
