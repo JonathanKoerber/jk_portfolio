@@ -5,6 +5,11 @@ import farestart from '../images/farestart.jpg';
 import wgu from '../images/wgu_icon.jpg';
 import omega from '../images/omega.png';
 import github from '../images/GitHub-Mark-64px.png';
+import demLap from '../images/dl_logo.png';
+import gatsby from '../images/gatsby-logo.png';
+import freeCode from '../images/freecodecamp-logo.png';
+//dem lab
+//iseatree
 
 
 const Container = styled.article`
@@ -43,7 +48,7 @@ const Text = styled.p`
 font-family: Helvetica Nue, sans-serif;
 font-size: .7em;
 color: #000;
-text-align: flex-start;
+text-align: start;
 padding: 1%;
 margin-right: auto;
 `;
@@ -69,8 +74,15 @@ function GetLogo(tag){
     return <Logo src={farestart}/>
   }else if(tag === 'omega'){
     return <Logo src={omega}/>
+  }else if(tag === 'freeCodeCamp'){
+    return <Logo src={freeCode}/>
+  }else if(tag === 'demLab'){
+    return <Logo src={demLap}/>
+  }else if(tag === 'gatsby'){
+    return <Logo src={gatsby}/>
   }
 }
+
 function GetBackground(tag){
   if(tag === 'wgu'){
     return '#8aa0ff'
@@ -80,8 +92,15 @@ function GetBackground(tag){
     return '#fee5cf'
   }else if(tag === 'omega'){
     return '#e8fbff'
+  }else if(tag === 'freeCodeCamp'){
+    return '#d5feef'
+  }else if(tag === 'demLab'){
+    return '#f2d795'
+  }else if(tag === 'gatsby'){
+    return '#bca8cf'
   }
 }
+
 function GetFade(tag){
   if(tag === 'wgu'){
     return 'fade-up'
@@ -91,6 +110,12 @@ function GetFade(tag){
     return 'fade-up-right'
   }else if(tag === 'omega'){
     return 'fade-up-right'
+  }else if(tag === 'freeCodeCamp'){
+    return 'fade-up'
+  }else if(tag === 'demLab'){
+    return 'fade-up-right'
+  }else if(tag === 'gatsby'){
+    return 'fade-up-left'
   }
 }
 

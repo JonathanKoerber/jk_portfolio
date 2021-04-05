@@ -17,32 +17,104 @@ const Wrapper = styled.div`
    height: 100%;
   }
   overflow: hidden;
-
 `;
 
 const Data = [
+    {
+        title:'celyPortfolio',
+        text:  'Refactored Cely\'s Personal website using Gatsby and is deployed on Gatsby Cloud.',
+        date: 'April 2021',
+        category: {
+            tag: 'gatsby',
+            color: '#018f69',
+            align: 'end'
+        },
+        link: {
+            url:
+              'https://celyhenriquez.gatsbyjs.io/',
+            text: 'Checkout Site'
+        }
+    },
+    {
+        title:'freeCodeCamp',
+        text:  'Completed freeCodeCamp\'s Scientific Computing with Python Course',
+        date: 'April 2021',
+        category: {
+            tag: 'freeCodeCamp',
+            color: '#018f69',
+            align: 'center'
+        },
+        link: {
+            url:
+              'https://www.freecodecamp.org/learn/scientific-computing-with-python/#python-for-everybody',
+            text: 'Checkout Course'
+        }
+    },  {
+        title:'Hackathon @ DemocracyLab.org',
+        text:  'Participated in St. Hack-trick\'s Day 2021',
+        date: 'March 2021',
+        category: {
+            tag: 'demLab',
+            color: '#000',
+            align: 'center'
+        },
+        link: {
+            url:
+              '',
+            text: ''
+        }
+    },  {
+        title:'Bakery Set up Planning',
+        text:  'Started the planning stage for building up the baking program to supply'+
+          'emergency meals at FareStart',
+        date: 'November 2020',
+        category: {
+            tag: 'farestart',
+            color: '#018f69',
+            align: 'start'
+        },
+        link: {
+            url:
+              '',
+            text: ''
+        }
+    },  {
+        title:'Hackathon @ DemocracyLab.org',
+        text:  'Hacky New Year 2021',
+        date: 'March 2021',
+        category: {
+            tag: 'demLab',
+            color: '#000',
+            align: 'center'
+        },
+        link: {
+            url:
+              '',
+            text: ''
+        }
+    },
   {
-      title:'Bakery Set up Planning',
+      title:'Joined iSeaTree',
       text:  'Started the planning stage for building up the baking program to supply'+
       'emergency meals at FareStart',
       date: 'November 2020',
       category: {
-          tag: 'farestart',
+          tag: 'iSeaTree',
           color: '#018f69',
           align: 'start'
       },
       link: {
           url:
-              '',
-          text: ''
+              'https://treemama.org/the-tech-treehouse/iseatree/',
+          text: 'See Project'
       }
   },
   {
-      title:'jk_porfolio',
+      title:'jk_portfolio',
       text: 'Personal web site built using Gatsby and is deployed on Gatsby Cloud.',
       date: 'October 2020',
       category: {
-          tag: 'github',
+          tag: 'gatsby',
           color: '#018f69',
           align: 'end'
       },

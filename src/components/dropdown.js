@@ -116,8 +116,7 @@ class Dropdown extends React.Component {
           (null)
       }
 
-      <
-      /Wrapper>
+      </Wrapper>
 
     );
   }
