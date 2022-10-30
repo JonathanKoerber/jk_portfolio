@@ -1,5 +1,5 @@
-import React from 'react';
-import styled, {css} from 'styled-components';
+import React from "react"
+import styled, { css } from "styled-components"
 
 const Text = styled.p`
   font-family: Helvetica Nue, sans-serif;
@@ -7,10 +7,8 @@ const Text = styled.p`
   color: #000;
   text-align: left;
   padding: 1%;
-    `;
+`
 
-const Paragraph = (props) => (
-    <Text>{props.text}</Text>
-)
+const Paragraph = props => <Text>{props.text}</Text>
 
-export default Paragraph;
+export default Paragraph

@@ -1,8 +1,7 @@
-import React from 'react';
-import UnderLineSection from '../components/UnderLineSection';
-import styled, {css} from 'styled-components';
+import React from "react"
+import UnderLineSection from "../components/UnderLineSection"
+import styled, { css } from "styled-components"
 import Dropdown from "../components/dropdown"
-
 
 // style for heading component
 const Wrapper = styled.header`
@@ -19,13 +18,12 @@ const Wrapper = styled.header`
     top: 0;
     left: 0;
 
-`;
+`
 
-
-const Header = () =>(
-    <Wrapper>
-    <Dropdown/>
-    </Wrapper>
+const Header = () => (
+  <Wrapper>
+    <Dropdown />
+  </Wrapper>
 )
 
-export default Header;
+export default Header

@@ -1,11 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import styled, {css} from 'styled-components';
+import React, { useEffect, useState } from "react"
+import styled, { css } from "styled-components"
 import Header from "../components/header"
-import SectionTitle from '../components/sectionTitle'
-import Paragraph from '../components/paragraph'
-import Column from '../components/column'
-
-
+import SectionTitle from "../components/sectionTitle"
+import Paragraph from "../components/paragraph"
+import Column from "../components/column"
 
 const Wrapper = styled.section`
   position: relative;
@@ -17,12 +15,12 @@ const Wrapper = styled.section`
   border-width: 1px;
   border-style: solid;
   border-radius: 1em;
-  @media only screen and (min-width: 789px){
+  @media only screen and (min-width: 789px) {
     padding: 0;
     width: 100%;
     height: inherit;
   }
-/* @media only screen and (min-width: 575.98px){
+  /* @media only screen and (min-width: 575.98px){
     margin-bottom: -.75%;
 }
 @media only screen and (min-width: 768px){
@@ -33,57 +31,55 @@ const Wrapper = styled.section`
     height: auto;
     margin-bottom: -.2%;
 } */
-    `;
+`
 
 const Image = styled.img`
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 1em;
-    display: block;
-@media only screen and (min-width: 789px){
-  width: 50%;
-  
-}
-    `;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 1em;
+  display: block;
+  @media only screen and (min-width: 789px) {
+    width: 50%;
+  }
+`
 
 const TextContainer = styled.div`
   position: relative;
   width: 100%;
   height: inherit;
-  padding: .5em 0 .5em 0;
-  @media only screen and (min-width: 789px){
-
+  padding: 0.5em 0 0.5em 0;
+  @media only screen and (min-width: 789px) {
   }
-`;
+`
 
 const Row = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-
-    @media only screen and (min-width: 789px){
-      flex-direction: row;
-    }
-`;
+  @media only screen and (min-width: 789px) {
+    flex-direction: row;
+  }
+`
 
 function Project(props) {
-    const project = props.project;
-    const image = "https://react-flask-app.s3-us-west-2.amazonaws.com"+project.image;
-return(
+  const project = props.project
+  const image =
+    "https://react-flask-app.s3-us-west-2.amazonaws.com" + project.image
+  return (
     <Wrapper>
-    <Row>
-        <Image src={project.image}/>
+      <Row>
+        <Image src={project.image} />
         <TextContainer>
-        <Column>
-          <SectionTitle title={project.title} link={project.href}/>
-          <Paragraph text={project.description}/>
+          <Column>
+            <SectionTitle title={project.title} link={project.href} />
+            <Paragraph text={project.description} />
           </Column>
         </TextContainer>
-        </Row>
+      </Row>
     </Wrapper>
-)
+  )
 }
-export default Project;
+export default Project
