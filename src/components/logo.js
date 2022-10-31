@@ -1,12 +1,8 @@
 import React from "react"
-import styled, { css } from "styled-components"
-import Title from "../components/title"
-import SectionTitle from "../components/sectionTitle"
-import Paragraph from "../components/paragraph"
+import styled from "styled-components"
 import Row from "../components/row"
 import Column from "../components/column"
-import UnderLineSection from "../components/UnderLineSection"
-import Photo from "../components/photo"
+
 
 const Wrapper = styled.article`
   position: sticky;
@@ -46,11 +42,7 @@ const ImageOuterWrapper = styled.div`
   margin-left: auto;
   padding: 0.7em;
 `
-const Line = styled.div`
-  with: 0.4em;
-  height: 30%;
-  color: #fff;
-`
+
 const VertLine = styled.div`
   height: 2em;
   width: 1px;

@@ -1,6 +1,6 @@
 import React from "react"
-import styled, { css } from "styled-components"
-import UnderLineSection from "../components/UnderLineSection"
+import styled from "styled-components"
+
 import SectionTitle from "../components/sectionTitle"
 import Paragraph from "../components/paragraph"
 import Title from "../components/title"
@@ -41,7 +41,7 @@ const blurb = [
 const content = [
   {
     title: "Education",
-    text: "Western Govenors Univerity: BA Software Development",
+    text: "Western Govenors Univerity: BS Software Development",
   },
   {
     title: "Certifications",
@@ -60,7 +60,7 @@ const Info = props => (
     </Row>
     {blurb.map((c, index) => {
       return (
-        <Row>
+        <Row >
           <Column>
             <SectionTitle title={c.title} />
           </Column>

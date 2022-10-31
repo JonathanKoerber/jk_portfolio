@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react"
-import styled, { css } from "styled-components"
-import Header from "../components/header"
+import React from "react"
+import styled from "styled-components"
 import SectionTitle from "../components/sectionTitle"
 import Paragraph from "../components/paragraph"
 import Column from "../components/column"
@@ -66,8 +65,7 @@ const Row = styled.div`
 
 function Project(props) {
   const project = props.project
-  const image =
-    "https://react-flask-app.s3-us-west-2.amazonaws.com" + project.image
+ 
   return (
     <Wrapper>
       <Row>

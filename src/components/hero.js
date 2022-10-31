@@ -1,23 +1,10 @@
 import React from "react"
-import styled, { css } from "styled-components"
-import Title from "../components/title"
-import SectionTitle from "../components/sectionTitle"
-import Paragraph from "../components/paragraph"
+import styled from "styled-components"
 import Row from "../components/row"
 import Column from "../components/column"
 import UnderLineSection from "../components/UnderLineSection"
 import Photo from "../components/photo"
 
-const T = styled.h1`
-  font-family: "Times New Roman", serif;
-  align-self: left;
-  font-size: 1.5em;
-  font-weight: bolder;
-  color: #000;
-  @media only screen and (min-width: 992px) {
-    font-size: 3em;
-  }
-`
 
 const VertLine = styled.div`
   height: 4em;

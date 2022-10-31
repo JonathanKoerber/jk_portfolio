@@ -1,6 +1,5 @@
 import React from "react"
-import styled, { css } from "styled-components"
-import { Link } from "gatsby"
+import styled from "styled-components"
 import Button from "../components/button"
 import Row from "../components/row"
 

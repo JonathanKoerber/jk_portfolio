@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 const Text = styled.p`
   font-family: Helvetica Nue, sans-serif;

@@ -1,15 +1,10 @@
-import React, { Component, useEffect, useState } from "react"
-import styled, { css } from "styled-components"
+import React from "react"
+import styled from "styled-components"
 import Project from "../components/project"
-import Description from "../components/description"
-import UnderLineSection from "../components/UnderLineSection"
 import SectionTitle from "../components/sectionTitle"
-import Paragraph from "../components/paragraph"
-import Title from "../components/title"
 import Github from "../components/github"
-import Row from "../components/row"
 import Column from "../components/column"
-import ScrollView from "../components/scrollView"
+
 
 const Container = styled.div`
   margin: 0;
@@ -26,11 +21,6 @@ const Wrapper = styled.figure`
   }
 `
 
-const PortfolioTitle = styled(SectionTitle)`
-  padding: 5%;
-  text-align: left;
-`
-
 const Text = styled.p`
   font-family: Helvetica Nue, sans-serif;
   font-size: 1.1em;
@@ -38,11 +28,6 @@ const Text = styled.p`
   text-align: left;
 `
 
-const ParaRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`
 
 const projects = [
   {

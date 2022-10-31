@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import { Link } from "gatsby"
 import farestart from "../images/farestart.jpg"
 import wgu from "../images/wgu_icon.jpg"
@@ -101,23 +101,6 @@ function GetBackground(tag) {
   }
 }
 
-function GetFade(tag) {
-  if (tag === "wgu") {
-    return "fade-up"
-  } else if (tag === "github") {
-    return "fade-up-left"
-  } else if (tag === "farestart") {
-    return "fade-up-right"
-  } else if (tag === "omega") {
-    return "fade-up-right"
-  } else if (tag === "freeCodeCamp") {
-    return "fade-up"
-  } else if (tag === "demLab") {
-    return "fade-up-right"
-  } else if (tag === "gatsby") {
-    return "fade-up-left"
-  }
-}
 
 const Item = ({ data }) => (
   <Container

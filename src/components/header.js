@@ -1,6 +1,5 @@
 import React from "react"
-import UnderLineSection from "../components/UnderLineSection"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import Dropdown from "../components/dropdown"
 
 // style for heading component

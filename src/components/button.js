@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import { Link } from "gatsby"
 
 const Wrapper = styled.div`
@@ -35,9 +35,7 @@ const StyledLink = styled(Link)`
     }
   }
 `
-const Divider = styled.div`
-  height: inherit;
-`
+
 
 const Button = props => (
   <Wrapper>

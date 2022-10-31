@@ -1,19 +1,6 @@
-import React, { Component, useEffect, useState } from "react"
-import styled, { css } from "styled-components"
-//   const [scrollPosition, setScrollPosition] = useState(0);
-//
-//
-//   const handleScroll= () =>{
-//     const position = window.pageYOffset;
-//     setScrollPosition(position);
-//   }
-// useEffect(()=>{
-//   window.addEventListener('scroll', handleScroll, {passive: true});
-//   return () => {
-//     window.removeEventListener('scroll', handleScroll);
-//
-//   };
-// }, [])
+import React from "react"
+import styled from "styled-components"
+
 const projects = [
   {
     title: "Celys Portfolio",

@@ -1,15 +1,9 @@
 import React from "react"
-import styled, { css } from "styled-components"
-import UnderLineSection from "../components/UnderLineSection"
-import SectionTitle from "../components/sectionTitle"
 import Paragraph from "../components/paragraph"
 import Row from "../components/row"
-import Column from "../components/column"
 import Title from "../components/title"
 
-const WideColumn = styled(Column)`
-  width: 100%;
-`
+
 const blurb = [
   {
     name: "Jonathan Koerber",
@@ -27,7 +21,7 @@ const blurb = [
   },
 ]
 
-const Intro = props => (
+const Intro = () => (
   <div>
     <Row>
       <Title text="Jonathan Koerber" />

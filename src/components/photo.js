@@ -1,6 +1,6 @@
 import React from "react"
-import styled, { css } from "styled-components"
-import node_hero from "../images/node_hero.jpeg"
+import styled from "styled-components"
+
 
 const Wrapper = styled.div`
   margin-top: 3.5em;
@@ -40,11 +40,7 @@ const ImageOuterWrapper = styled.div`
   margin-left: auto;
   padding: 2em;
 `
-const Line = styled.div`
-  with: 0.4em;
-  height: 30%;
-  color: #fff;
-`
+
 
 const Photo = props => (
   <Wrapper>
