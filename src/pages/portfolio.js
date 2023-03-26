@@ -1,16 +1,16 @@
-import React from "react"
-import { GlobalStyle } from "../components/theme/globalStyle"
-import Header from "../components/header"
-import Hero from "../components/hero"
-import Nav from "../components/nav"
-import Main from "../components/main"
-import Gallery from "../components/gallery"
-import Footer from "../components/footer"
+import React from "react";
+import { GlobalStyle } from "../components/theme/globalStyle";
+import Header from "../components/header";
+import Hero from "../components/hero";
+import Nav from "../components/nav";
+import Main from "../components/main";
+import Gallery from "../components/gallery";
+import Footer from "../components/footer";
 
 const buttons = [
   { text: "Home", link: "/" },
   { text: "What I've Been Up To", link: "/milestones" },
-]
+];
 
 export default function Portfolio() {
   return (
@@ -24,5 +24,5 @@ export default function Portfolio() {
       <Nav buttons={buttons} />
       <Footer />
     </div>
-  )
+  );
 }

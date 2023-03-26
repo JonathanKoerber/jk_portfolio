@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import Button from "../components/button"
-import Row from "../components/row"
+import React from "react";
+import styled from "styled-components";
+import Button from "../components/button";
+import Row from "../components/row";
 
 const Wrapper = styled.nav`
   display: flex;
@@ -15,14 +15,14 @@ const Wrapper = styled.nav`
     rgba(0, 0, 0, 0),
     rgba(144, 176, 148, 1)
   );
-`
+`;
 const Uderline = styled.div`
   width: 100%;
   margin: 0 15% 0 15%;
   border-color: white;
   border-top-width: 1px;
   border-top-style: solid;
-`
+`;
 const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
@@ -33,16 +33,16 @@ const Container = styled.div`
   border-style: solid;
   border-radius: 0.5em;
   opacity: 7;
-`
+`;
 const VertLine = styled.div`
   height: 2em;
   width: 1px;
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
-`
+`;
 
-const FixedNav = props => (
+const FixedNav = (props) => (
   <div>
     <Wrapper>
       <Row>
@@ -52,12 +52,12 @@ const FixedNav = props => (
       <Container>
         <Row>
           {props.buttons.map((c, index) => {
-            return <Button link={c.link} text={c.text} />
+            return <Button link={c.link} text={c.text} />;
           })}
         </Row>
       </Container>
     </Wrapper>
   </div>
-)
+);
 
-export default FixedNav
+export default FixedNav;

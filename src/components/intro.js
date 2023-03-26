@@ -1,8 +1,7 @@
-import React from "react"
-import Paragraph from "../components/paragraph"
-import Row from "../components/row"
-import Title from "../components/title"
-
+import React from "react";
+import Paragraph from "../components/paragraph";
+import Row from "../components/row";
+import Title from "../components/title";
 
 const blurb = [
   {
@@ -19,7 +18,7 @@ const blurb = [
     photo:
       "https://jk-portfolio.s3-us-west-2.amazonaws.com/20201025_121900.jpg",
   },
-]
+];
 
 const Intro = () => (
   <div>
@@ -31,9 +30,9 @@ const Intro = () => (
         <Row>
           <Paragraph text={c.text} />
         </Row>
-      )
+      );
     })}
   </div>
-)
+);
 
-export default Intro
+export default Intro;

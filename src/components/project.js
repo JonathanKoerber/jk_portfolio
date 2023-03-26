@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
-import SectionTitle from "../components/sectionTitle"
-import Paragraph from "../components/paragraph"
-import Column from "../components/column"
+import React from "react";
+import styled from "styled-components";
+import SectionTitle from "../components/sectionTitle";
+import Paragraph from "../components/paragraph";
+import Column from "../components/column";
 
 const Wrapper = styled.section`
   position: relative;
@@ -30,7 +30,7 @@ const Wrapper = styled.section`
     height: auto;
     margin-bottom: -.2%;
 } */
-`
+`;
 
 const Image = styled.img`
   width: 100%;
@@ -41,7 +41,7 @@ const Image = styled.img`
   @media only screen and (min-width: 789px) {
     width: 50%;
   }
-`
+`;
 
 const TextContainer = styled.div`
   position: relative;
@@ -50,7 +50,7 @@ const TextContainer = styled.div`
   padding: 0.5em 0 0.5em 0;
   @media only screen and (min-width: 789px) {
   }
-`
+`;
 
 const Row = styled.div`
   display: flex;
@@ -61,11 +61,11 @@ const Row = styled.div`
   @media only screen and (min-width: 789px) {
     flex-direction: row;
   }
-`
+`;
 
 function Project(props) {
-  const project = props.project
- 
+  const project = props.project;
+
   return (
     <Wrapper>
       <Row>
@@ -78,6 +78,6 @@ function Project(props) {
         </TextContainer>
       </Row>
     </Wrapper>
-  )
+  );
 }
-export default Project
+export default Project;

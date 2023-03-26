@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const Title = styled.h3`
   text-align: left;
@@ -9,7 +9,7 @@ const Title = styled.h3`
   font-size: 2em;
   font-weight: bold;
   margin: 0;
-`
+`;
 const UnderLine = styled.div`
   width: 4em;
   height: 0.15em;
@@ -17,13 +17,13 @@ const UnderLine = styled.div`
   margin: 0 auto;
   border-radius: 5px;
   opacity: 0.5;
-`
+`;
 const StyleLink = styled(Link)`
   text-decoration: none;
   color: white;
-`
+`;
 
-const SectionTitle = props => (
+const SectionTitle = (props) => (
   <div>
     <Title>
       <StyleLink target="blank" to={props.link}>
@@ -32,6 +32,6 @@ const SectionTitle = props => (
     </Title>
     <UnderLine />
   </div>
-)
+);
 
-export default SectionTitle
+export default SectionTitle;

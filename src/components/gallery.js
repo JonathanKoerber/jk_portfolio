@@ -1,15 +1,14 @@
-import React from "react"
-import styled from "styled-components"
-import Project from "../components/project"
-import SectionTitle from "../components/sectionTitle"
-import Github from "../components/github"
-import Column from "../components/column"
-
+import React from "react";
+import styled from "styled-components";
+import Project from "../components/project";
+import SectionTitle from "../components/sectionTitle";
+import Github from "../components/github";
+import Column from "../components/column";
 
 const Container = styled.div`
   margin: 0;
   padding: 0;
-`
+`;
 
 const Wrapper = styled.figure`
   padding: 0;
@@ -19,17 +18,22 @@ const Wrapper = styled.figure`
   @media only screen and (min-width: 789px) {
     flex-flow: row wrap;
   }
-`
+`;
 
 const Text = styled.p`
   font-family: Helvetica Nue, sans-serif;
   font-size: 1.1em;
   color: #000;
   text-align: left;
-`
-
+`;
 
 const projects = [
+  // {
+  //   title: "",
+  //   image: '',
+  //   href: "",
+  //   description: "",
+  // },
   {
     title: "TreeMama/iSea Tree-React-Prototype",
     image:
@@ -71,22 +75,21 @@ const projects = [
       "of this application is to prepare an animation to run in an environment which prevents the file from " +
       "calling outside resources.",
   },
-]
+];
 
 const Gallery = () => (
   <Container>
     <Column>
       <SectionTitle title="Portfolio" />
-      <Text>Here are a few of my projects.</Text>
-      <Text>There's more here.</Text>
+      <Text>Here are some of the projects that I have worked on. I’m a curious person by nature and am always looking for projects to expand my skill set. So check out my GitHub to see more of my work. Since enrolling at City University of Seattle, I’m back to writing papers, which has been fun! I’ve got one on data structures below.</Text>
       <Github />
     </Column>
     <Wrapper>
       {projects.map((p, index) => {
-        return <Project project={p} />
+        return <Project project={p} />;
       })}
     </Wrapper>
   </Container>
-)
+);
 
-export default Gallery
+export default Gallery;

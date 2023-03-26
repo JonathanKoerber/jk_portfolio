@@ -1,6 +1,6 @@
-import React from "react"
-import styled  from "styled-components"
-import { Link } from "gatsby"
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const Text = styled.h1`
   text-align: left;
@@ -11,13 +11,13 @@ const Text = styled.h1`
   color: #fff;
   padding: 10% 0 10% 0;
   margin: 0;
-`
+`;
 
 const StyleLink = styled(Link)`
   text-decoration: none;
-`
+`;
 
-const Title = props => (
+const Title = (props) => (
   <div>
     <Text>
       <StyleLink target="blank" to={props.link}>
@@ -25,6 +25,6 @@ const Title = props => (
       </StyleLink>
     </Text>
   </div>
-)
+);
 
-export default Title
+export default Title;

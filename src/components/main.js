@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-import Row from "../components/row"
+import Row from "../components/row";
 
 const Wrapper = styled.section`
   align-item: start;
@@ -10,10 +10,10 @@ const Wrapper = styled.section`
   @media only screen and (min-width: 789px) {
     margin: 5% 15% 10% 15%;
   }
-`
-const Main = props => (
+`;
+const Main = (props) => (
   <Wrapper>
     <Row>{props.children}</Row>
   </Wrapper>
-)
-export default Main
+);
+export default Main;

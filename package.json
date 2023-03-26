@@ -1,40 +1,39 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "jonathan-koerber-portfolio",
+  "version": "1.0.0",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "0BSD",
+  "description": "jonathan-koerber-portfolio",
+  "author": "JonathanKoerber",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "heroku-postbuild": "gatsby build",
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "aos": "^2.3.4",
-    "babel-plugin-styled-components": "^1.11.1",
-    "bootstrap": "^4.5.2",
-    "gatsby": "^2.29.2",
-    "gatsby-image": "^2.4.19",
-    "gatsby-plugin-scroll-reveal": "0.0.7",
-    "gatsby-plugin-styled-components": "^3.3.11",
-    "prettier-cli": "^0.1.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "styled-components": "^5.2.0"
+    "@mdx-js/react": "^2.3.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "gatsby": "^5.7.0",
+    "gatsby-plugin-google-gtag": "^5.7.0",
+    "gatsby-plugin-image": "^3.8.0",
+    "gatsby-plugin-manifest": "^5.7.0",
+    "gatsby-plugin-mdx": "^5.7.0",
+    "gatsby-plugin-sharp": "^5.8.0",
+    "gatsby-plugin-sitemap": "^6.7.0",
+    "gatsby-plugin-styled-components": "^6.7.0",
+    "gatsby-remark-images": "^7.8.0",
+    "gatsby-source-filesystem": "^5.8.0",
+    "gatsby-transformer-remark": "^6.8.0",
+    "gatsby-transformer-sharp": "^5.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.8"
   },
   "devDependencies": {
-    "prettier": "2.1.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "prettier": "2.8.4"
   }
 }

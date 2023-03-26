@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
-  max-width: 340px;
+  max-width: 800px;
   width: 100%;
   @media only screen and (min-width: 789px) {
     width: auto;
@@ -11,8 +11,8 @@ const Wrapper = styled.div`
   @media only screen and (min-width: 992px) {
     min-width: 50%;
   }
-`
+`;
 
-const Column = props => <Wrapper>{props.children}</Wrapper>
+const Column = (props) => <Wrapper>{props.children}</Wrapper>;
 
-export default Column
+export default Column;

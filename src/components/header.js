@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import Dropdown from "../components/dropdown"
+import React from "react";
+import styled from "styled-components";
+import Dropdown from "../components/dropdown";
 
 // style for heading component
 const Wrapper = styled.header`
@@ -17,12 +17,12 @@ const Wrapper = styled.header`
     top: 0;
     left: 0;
 
-`
+`;
 
 const Header = () => (
   <Wrapper>
     <Dropdown />
   </Wrapper>
-)
+);
 
-export default Header
+export default Header;

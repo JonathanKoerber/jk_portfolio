@@ -1,10 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-
+import React from "react";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   margin-top: 3.5em;
-`
+`;
 const Image = styled.img`
   height: 10em;
   width: 10em;
@@ -15,7 +14,7 @@ const Image = styled.img`
 
   border-color: #fff;
   border-width: 1px;
-`
+`;
 
 const ImageWrapper = styled.div`
   height: 10em;
@@ -27,7 +26,7 @@ const ImageWrapper = styled.div`
   opacity: 7;
   margin-right: auto;
   margin-left: auto;
-`
+`;
 const ImageOuterWrapper = styled.div`
   width: min-content;
   hight: max-content;
@@ -39,10 +38,9 @@ const ImageOuterWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 2em;
-`
+`;
 
-
-const Photo = props => (
+const Photo = (props) => (
   <Wrapper>
     <ImageOuterWrapper>
       <ImageOuterWrapper>
@@ -52,6 +50,6 @@ const Photo = props => (
       </ImageOuterWrapper>
     </ImageOuterWrapper>
   </Wrapper>
-)
+);
 
-export default Photo
+export default Photo;

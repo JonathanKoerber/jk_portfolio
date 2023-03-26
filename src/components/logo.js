@@ -1,8 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import Row from "../components/row"
-import Column from "../components/column"
-
+import React from "react";
+import styled from "styled-components";
+import Row from "../components/row";
+import Column from "../components/column";
 
 const Wrapper = styled.article`
   position: sticky;
@@ -17,7 +16,7 @@ const Wrapper = styled.article`
     rgba(144, 176, 148, 1),
     rgba(0, 0, 0, 0)
   );
-`
+`;
 const ImageWrapper = styled.div`
   height: 0.5em;
   width: 0.5em;
@@ -29,7 +28,7 @@ const ImageWrapper = styled.div`
   padding: 0.2em;
   margin-right: auto;
   margin-left: auto;
-`
+`;
 const ImageOuterWrapper = styled.div`
   width: min-content;
   hight: max-content;
@@ -41,7 +40,7 @@ const ImageOuterWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0.7em;
-`
+`;
 
 const VertLine = styled.div`
   height: 2em;
@@ -49,14 +48,14 @@ const VertLine = styled.div`
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
-`
+`;
 
 const HorzLine = styled.div`
   border-color: white;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   margin: 0 15% 0 15%;
-`
+`;
 const Hero = () => (
   <Wrapper>
     <Row>
@@ -71,5 +70,5 @@ const Hero = () => (
     <VertLine />
     <HorzLine />
   </Wrapper>
-)
-export default Hero
+);
+export default Hero;

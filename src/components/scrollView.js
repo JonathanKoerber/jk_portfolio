@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const projects = [
   {
@@ -33,32 +33,32 @@ const projects = [
       "of this application is to prepare an animation to run in an environment which prevents the file from " +
       "calling outside resources.",
   },
-]
-let background = projects[0].image
+];
+let background = projects[0].image;
 const Container = styled.div`
   background-image: url(background);
   padding: 0;
-`
+`;
 const List = styled.ul`
   list-style-type: none;
   padding: 0;
-`
+`;
 const Item = styled.li`
-  padding: 0; ;
-`
+  padding: 0;
+`;
 
 //chancge container backgound
 function changeBackground(image) {
-  background = image
+  background = image;
 }
 const list = projects.map((project, index) => (
   <Item key={index} onMouseOver={changeBackground(project.image)}>
     {project.title}
   </Item>
-))
+));
 const ScrollView = () => (
   <Container>
     <List>{list}</List>
   </Container>
-)
-export default ScrollView
+);
+export default ScrollView;

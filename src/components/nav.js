@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-import Button from "../components/button"
-import Row from "../components/row"
+import Button from "../components/button";
+import Row from "../components/row";
 
 const Wrapper = styled.nav`
   display: flex;
@@ -16,7 +16,7 @@ const Wrapper = styled.nav`
   opacity: 7;
   margin-right: auto;
   margin-left: auto;
-`
+`;
 
 const Underline = styled.div`
   margin: 0;
@@ -26,7 +26,7 @@ const Underline = styled.div`
   @media only screen and (min-width: 789px) {
     margin: 0 15% 0 15%;
   }
-`
+`;
 
 const VertLine = styled.div`
   height: 4em;
@@ -34,20 +34,20 @@ const VertLine = styled.div`
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
-`
+`;
 
-const Nav = props => (
+const Nav = (props) => (
   <div>
     <Underline />
     <VertLine />
     <Wrapper>
       <Row>
         {props.buttons.map((c, index) => {
-          return <Button link={c.link} text={c.text} />
+          return <Button link={c.link} text={c.text} key={index} />;
         })}
       </Row>
     </Wrapper>
   </div>
-)
+);
 
-export default Nav
+export default Nav;

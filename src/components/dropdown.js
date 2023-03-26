@@ -1,14 +1,15 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
-import menuImage from "../images/menu(1).png"
-
+import React from "react";
+import { useState } from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import menuImage from "../images/menu(1).png";
+import closeImage from "../images/closeImage.png";
 const Wrapper = styled.div`
   margin-right: 2em;
   @media only screen and (max-width: 789px) {
     display: none;
   }
-`
+`;
 
 const Menu = styled.div`
   padding: 1em;
@@ -19,7 +20,7 @@ const Menu = styled.div`
   border-width: 1px;
   border-style: solid;
   border-radius: 0.5em;
-`
+`;
 
 const Text = styled.h1`
   font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
@@ -32,95 +33,119 @@ const Text = styled.h1`
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
-`
+`;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: black;
   @media only screen and (min-width: 789px) {
   }
-`
+`;
+const StyledExternalLink = styled.a`
+  text-decoration: none;
+  color: black;
+  @media only screen and (min-width: 789px) {
+  }
+`;
 const Icon = styled.img`
-  height: auto;
-  width: auto;
-`
+  height: 2em;
+  width: 2em;
+`;
 const List = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
-`
-class Dropdown extends React.Component {
-  constructor() {
-    super()
+`;
+const Dropdown = () => {
+  const [open, setOpen] = useState(false);
+  const [looking, setLooking] = useState(false);
 
-    this.state = {
-      displayMenu: false,
-    }
+  // TODO the handle click function is not working.
+  const handleClick = () => {
+    setOpen(!open);
+  };
 
-    this.showDropdownMenu = this.showDropdownMenu.bind(this)
-    this.hideDropdownMenu = this.hideDropdownMenu.bind(this)
-  }
+  const closeMenu = () => {
+    setTimeout(function(){
+      setOpen(false);
+    }, 1000);
+  };
+  return (
+    <Wrapper onMouseLeave={() => closeMenu()}>
+      <Icon src={open ? closeImage : menuImage} onClick={() => handleClick()} />
 
-  showDropdownMenu(event) {
-    event.preventDefault()
-    this.setState(
-      {
-        displayMenu: true,
-      },
-      () => {
-        document.addEventListener("click", this.hideDropdownMenu)
-      }
-    )
-  }
-
-  hideDropdownMenu() {
-    this.setState(
-      {
-        displayMenu: false,
-      },
-      () => {
-        document.removeEventListener("click", this.hideDropdownMenu)
-      }
-    )
-  }
-
-  render() {
-    return (
-      <Wrapper>
-        <Icon src={menuImage} onClick={this.showDropdownMenu} />
-        {this.state.displayMenu ? (
-          <Menu>
-            <List>
-              <li>
-                <Text>
-                  <StyledLink target="blank" to="/">
-                    {" "}
-                    Home{" "}
-                  </StyledLink>
-                </Text>
+      {open ? (
+        <Menu>
+          <List>
+            <li>
+              <Text>
+                <StyledLink target="blank" to="/" onClick={() => handleClick()}>
+                  {" "}
+                  Home{" "}
+                </StyledLink>
+              </Text>
+            </li>
+            <li>
+              <Text>
+                <StyledLink
+                  target="blank"
+                  to="/portfolio"
+                  onClick={() => handleClick()}
+                >
+                  {" "}
+                  Projects{" "}
+                </StyledLink>
+              </Text>
               </li>
               <li>
-                <Text>
-                  <StyledLink target="blank" to="/milestones">
-                    {" "}
-                    What I 've Been Up To
-                  </StyledLink>
-                </Text>
+              <Text>
+                <StyledExternalLink
+                  target="blank"
+                  href="mailto:jkoerbe@wgu.edu"
+                  onClick={() => handleClick()}
+                >
+                  {" "}
+                  Email{" "}
+                </StyledExternalLink>
+              </Text>{" "}
               </li>
               <li>
-                <Text>
-                  <StyledLink target="blank" to="/portfolio">
-                    {" "}
-                    Projects{" "}
-                  </StyledLink>
-                </Text>
+              <Text>
+                <StyledExternalLink
+                  target="blank"
+                  href="https://www.linkedin.com/in/jonathan-koerber/"
+                  onClick={() => handleClick()}
+                >
+                  {" "}
+                  LinkedIn{" "}
+                </StyledExternalLink>
+              </Text>{" "}
               </li>
-            </List>
-          </Menu>
-        ) : null}
-      </Wrapper>
-    )
-  }
-}
+              <li>
+              <Text>
+                <StyledExternalLink
+                  target="blank"
+                  href="https://github.com/JonathanKoerber"
+                  onClick={() => handleClick()}
+                >
+                  {" "}
+                  GitHub{" "}
+                </StyledExternalLink>
+              </Text>
+            </li>
+            <li>
+              <Text>
+                <StyledLink target="blank" to="/content/resume" onClick={() => handleClick()}>
+                  {" "}
+                  Resume{" "}
+                </StyledLink>
+              </Text>
+            </li>
+          </List>
+        </Menu>
+      ) : null}
+    </Wrapper>
+  );
+};
 
-export default Dropdown
+export default Dropdown;

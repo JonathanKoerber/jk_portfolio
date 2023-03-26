@@ -1,29 +1,29 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 // style for heading component
 const Wrapper = styled.footer`
   height: auto;
   padding: 0;
   margin: 1em;
-`
+`;
 const Email = styled.h5`
   font-size: 2em;
   font-family: "Helvetica Nue", sans-serif;
   font-weight: bolder;
   font-size: 1em;
   color: #5ba491;
-`
+`;
 const Social = styled.h6`
   font-family: "Helvetica Nue", sans-serif;
   font-size: 0.8em;
   font-weight: lighter;
   color: #457b6d;
-`
+`;
 const Link = styled.a`
   text-decoration: none;
   color: #457b6d;
-`
+`;
 
 const Footer = () => (
   <Wrapper>
@@ -47,6 +47,6 @@ const Footer = () => (
       </Link>
     </Social>
   </Wrapper>
-)
+);
 
-export default Footer
+export default Footer;

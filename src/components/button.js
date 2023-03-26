@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const Wrapper = styled.div`
   width: max-content;
@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 789px) {
     padding: 0.8em;
   }
-`
+`;
 const Text = styled.h1`
   font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
     Droid Sans, Helvetica Neue, sans-serif;
@@ -24,7 +24,7 @@ const Text = styled.h1`
     padding: 7% 0 7% 0;
     font-size: 0.9em;
   }
-`
+`;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -34,10 +34,9 @@ const StyledLink = styled(Link)`
       color: #5ba491;
     }
   }
-`
+`;
 
-
-const Button = props => (
+const Button = (props) => (
   <Wrapper>
     <Text>
       <StyledLink target="blank" to={props.link}>
@@ -45,6 +44,6 @@ const Button = props => (
       </StyledLink>
     </Text>
   </Wrapper>
-)
+);
 
-export default Button
+export default Button;
