@@ -9,7 +9,7 @@ import Footer from "../components/footer";
 
 const buttons = [
   { text: "Home", link: "/" },
-  { text: "What I've Been Up To", link: "/milestones" },
+  { text: "Resume", link: "/content/resume", key: "resume" }
 ];
 
 export default function Portfolio() {
