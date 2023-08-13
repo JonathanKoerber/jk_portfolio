@@ -1,5 +1,5 @@
 {
-  "name": "jonathan-koerber-portfolio",
+  "name" : "jonathan-koerber-portfolio",
   "version": "1.0.0",
   "private": true,
   "description": "jonathan-koerber-portfolio",
@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
